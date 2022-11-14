@@ -22,10 +22,6 @@ button {
     padding: 40px;
 }
 
-.slideBar {
-    display: flex;
-}
-
 button, .sketchbox {
     box-shadow: 10px 10px;
 }
@@ -40,6 +36,5 @@ button, .sketchbox {
 
 .square {
     border-color: black;
-    border-width: 1px;
 }
 
