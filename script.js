@@ -8,8 +8,8 @@ function createBoxes (num) {
         box.style.border = "0.5px solid black";
         box.className = "square";
         sketchBox.appendChild(box);
-        box.addEventListener("hover", () => {
-            box.style.backgroundColor = "black";
+        box.addEventListener("pointermove", () => {
+            box.style.backgroundColor = `${color}`;
         });
         
     }
@@ -32,7 +32,9 @@ const rgbBtn = document.getElementById("rgb");
 rgbBtn.addEventListener("click", () => {
     let random = Math.floor(Math.random()*16777215).toString(16);
     color = "#" + random;
-    return color;
+    box.addEventListener("pointermove", () => {
+        box.style.backgroundColor = `${color}`;
+    });
 });
 
 function getNum () {
