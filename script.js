@@ -28,6 +28,12 @@ blackBtn.addEventListener("click", () => {
     return color;
 })
 
+const eraserBtn = document.getElementById("eraser");
+eraserBtn.addEventListener("click", () => {
+    color = "whitesmoke";
+    return color;
+})
+
 const rgbBtn = document.getElementById("rgb");
 rgbBtn.addEventListener("click", () => {
     let random = Math.floor(Math.random()*16777215).toString(16);
