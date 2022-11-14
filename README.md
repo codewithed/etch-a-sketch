@@ -19,8 +19,8 @@
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/codewithed)
-- Twitter: [@twitterhandle](https://twitter.com/meet__ed)
+- GitHub: [@codewithed](https://github.com/codewithed)
+- Twitter: [@meet__ed](https://twitter.com/meet__ed)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/edmund-yaw-debrah-054461235/)
 
 ## 🤝 Contributing
