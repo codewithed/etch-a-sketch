@@ -1,4 +1,5 @@
 let color = 'black';
+let rgb = false;
 const num = 2;
 const sketchBox = document.getElementById('sketchBox');
 
@@ -24,29 +25,34 @@ function reset() {
 
 const blackBtn = document.getElementById('black');
 blackBtn.addEventListener('click', () => {
+  rgb = false;
   color = 'black';
   return color;
 });
 
 const eraserBtn = document.getElementById('eraser');
 eraserBtn.addEventListener('click', () => {
+  rgb = false;
   color = 'whitesmoke';
   return color;
 });
 
 const rgbBtn = document.getElementById('rgb');
-function rgb(box) {
-  const random = Math.floor(Math.random() * 16777215).toString(16);
-  color = `#${random}`;
+function setrgb(box) {
   box.addEventListener('pointermove', () => {
-    box.style.backgroundColor = `${color}`;
+    if (rgb === true) {
+      const random = Math.floor(Math.random() * 16777215).toString(16);
+      color = `#${random}`;
+      box.style.backgroundColor = `${color}`;
+    }
   });
 }
 
 rgbBtn.addEventListener('click', () => {
-  const boxes = querySelectorAll('#box');
+  rgb = true;
+  const boxes = document.querySelectorAll('#box');
   const boxArray = Array.from(boxes);
-  boxArray.forEach(rgb);
+  boxArray.forEach(setrgb);
 });
 
 function getNum() {
