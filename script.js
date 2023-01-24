@@ -1,6 +1,6 @@
 let color = 'black';
 let rgb = false;
-const num = 2;
+const num = 10;
 const sketchBox = document.getElementById('sketchBox');
 
 function createBoxes(num) {
